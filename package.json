@@ -1,0 +1,24 @@
+{
+  "name": "ui",
+  "version": "1.0.0",
+  "description": "",
+  "main": "playwright.config.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pslebedev/ui.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pslebedev/ui/issues"
+  },
+  "homepage": "https://github.com/pslebedev/ui#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.22.2"
+  }
+}
