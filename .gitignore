@@ -7,3 +7,4 @@ screenshot.png
 /test-results/
 /playwright-report/
 /playwright/.cache/
+allure-results
