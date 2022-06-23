@@ -28,4 +28,4 @@ jobs:
         cache: 'npm'
     - run: npx playwright install  
     - run: npm install -D @playwright/test
-    - run: npx playwright test
+    - run: npx playwright test --project=chromium
