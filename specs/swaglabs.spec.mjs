@@ -1,20 +1,18 @@
+import app from '../framework/pages/index.mjs'
+import { test, expect } from '@playwright/test';
 
-const { test, expect } = require('@playwright/test');
-
-
-
-    test ('Авторизоваться стандартным  пользователем', async ({page}) => {
-        await page.goto('https://www.saucedemo.com/')
-        await page.click('#user-name');
-        await page.fill('#user-name', 'standard_user');
-        await page.click('#password');
-        await page.fill('#password', 'secret_sauce');
-        await page.click('#login-button');
-        await page.locator('text=Products');        
+    test.only ('Авторизоваться стандартным  пользователем', async ({page}) => {
+        await app().Auth().login('https://www.saucedemo.com/','standard_user','secret_sauce')
+        // await page.goto('https://www.saucedemo.com/')
+        // await page.click('#user-name');
+        // await page.fill('#user-name', 'standard_user');
+        // await page.click('#password');
+        // await page.fill('#password', 'secret_sauce');
+        // await page.click('#login-button');              
         const welcomeText = await page.locator('text=Products');
         await expect(welcomeText).toContainText('Products')
     });
-test('Разлогиниться стандартным  пользователем', async ({page}) => {
+    test('Разлогиниться стандартным  пользователем', async ({page}) => {
     await page.goto('https://www.saucedemo.com/')
         await page.click('#user-name');
         await page.fill('#user-name', 'standard_user');
