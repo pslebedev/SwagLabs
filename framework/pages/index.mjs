@@ -1,7 +1,8 @@
 import authPage from './authPage.mjs'
 
 const app =() => ({
-    Auth: () => ({authPage}),
+    Auth: () => ({...authPage}),
+    // LogOut:() => ({})
 })
 
 export default app
