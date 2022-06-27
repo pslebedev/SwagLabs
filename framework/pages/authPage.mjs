@@ -1,7 +1,7 @@
 const usenameField = '#user-name'
 const passwordField = '#password'
 const loginButton = '#login-button'
-const searchText = 'text=Products'
+
 
 
 const authPage = {
