@@ -9,3 +9,5 @@ chrome и firefox
 - npx playwright test
 только chrome:
 - npx playwright test --project=chromium
+запуск в Headed режиме
+- npx playwright test --headed
