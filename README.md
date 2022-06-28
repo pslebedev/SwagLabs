@@ -4,10 +4,9 @@
 - npm install -D @playwright/test
 - npx playwright install
 
-# Запуск тестов:
-chrome и firefox
+# Запуск тестов в chrome и firefox:
 - npx playwright test
-только chrome:
+# только chrome:
 - npx playwright test --project=chromium
-запуск в Headed режиме
+# в Headed режиме
 - npx playwright test --headed
