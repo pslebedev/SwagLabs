@@ -1,10 +1,10 @@
 
-const { test, expect } = require('@playwright/test');
-
+import { test, expect } from '@playwright/test';
+import urls from '../framework/config/Index.mjs'
 
 
     test ('Авторизоваться стандартным  пользователем', async ({page}) => {
-        await page.goto('https://www.saucedemo.com/')
+        await page.goto(urls.SwagLabs)
         await page.click('#user-name');
         await page.fill('#user-name', 'standard_user');
         await page.click('#password');
@@ -15,7 +15,7 @@ const { test, expect } = require('@playwright/test');
         await expect(welcomeText).toContainText('Products')
     });
 test('Разлогиниться стандартным  пользователем', async ({page}) => {
-    await page.goto('https://www.saucedemo.com/')
+    await page.goto(urls.SwagLabs)
         await page.click('#user-name');
         await page.fill('#user-name', 'standard_user');
         await page.click('#password');
@@ -28,7 +28,7 @@ test('Разлогиниться стандартным  пользовател�
     
     });
     test('Положить товар в корзину', async ({page}) => {
-        await page.goto('https://www.saucedemo.com/')
+        await page.goto(urls.SwagLabs)
         await page.click('#user-name');
         await page.fill('#user-name', 'standard_user');
         await page.click('#password');
@@ -40,7 +40,7 @@ test('Разлогиниться стандартным  пользовател�
              });    
 
      test('Убрать товар из корзины', async ({page}) => {
-        await page.goto('https://www.saucedemo.com/')
+        await page.goto(urls.SwagLabs)
         await page.click('#user-name');
         await page.fill('#user-name', 'standard_user');
         await page.click('#password');
@@ -53,7 +53,7 @@ test('Разлогиниться стандартным  пользовател�
              });
 
     test('Совершить покупку', async ({page}) => {
-        await page.goto('https://www.saucedemo.com/')
+        await page.goto(urls.SwagLabs)
         await page.click('#user-name');
         await page.fill('#user-name', 'standard_user');
         await page.click('#password');
