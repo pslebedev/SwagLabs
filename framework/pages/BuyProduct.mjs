@@ -4,11 +4,11 @@ const lastName = '#last-name'
 const postalCode = '#postal-code'
 const continueButton = '#continue'
 const finish = '#finish'
-
+const link = 'https://www.saucedemo.com/cart.html'
 
 const buyProduct = {
-    login: async (page, username, pasword) =>{
-        await page.goto(page)
+    buy: async (page) =>{
+        await page.goto(link)
         await page.click(checkout);        
         await page.click(firstName);
         await page.fill(firstName, 'student')

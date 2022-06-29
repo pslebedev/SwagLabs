@@ -5,8 +5,8 @@ const loginButton = '#login-button'
 
 
 const authPage = {
-    login: async (page, username, pasword) =>{
-        await page.goto(page)
+    login: async (page,link, username, pasword) =>{
+        await page.goto(link)
         await page.click(usenameField);
         await page.fill(usenameField, username);
         await page.click(passwordField);
