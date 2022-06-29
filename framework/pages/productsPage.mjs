@@ -9,13 +9,13 @@ const productsPage = {
         await page.click(burger);
         await page.click(logoutButton)         
  },
-    addProduct: async (page,link) =>{
+    addProduct: async (page) =>{
         await page.click(addToCart);                
  },
-    removeProduct: async (page,link) =>{
+    removeProduct: async (page) =>{
         await page.click(removeFromCart)
 },
-    seeCart: async (page,link) =>{
+    seeCart: async (page) =>{
         await page.click(goToCart)   
 }
 }

@@ -1,14 +1,14 @@
+import {urls} from '../config/index.mjs'
 const checkout = "#checkout"
 const firstName = '#first-name'
 const lastName = '#last-name'
 const postalCode = '#postal-code'
 const continueButton = '#continue'
 const finish = '#finish'
-const link = 'https://www.saucedemo.com/cart.html'
 
 const buyProduct = {
     buy: async (page) =>{
-        await page.goto(link)
+        await page.goto(urls.cartPage)
         await page.click(checkout);        
         await page.click(firstName);
         await page.fill(firstName, 'student')
