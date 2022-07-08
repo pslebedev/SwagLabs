@@ -19,6 +19,6 @@
   },
   "homepage": "https://github.com/pslebedev/ui#readme",
   "devDependencies": {
-    "@playwright/test": "^1.22.2"
+    "@playwright/test": "^1.23.2"
   }
 }
